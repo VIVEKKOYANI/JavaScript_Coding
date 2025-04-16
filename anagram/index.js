@@ -17,5 +17,8 @@ function isAnagram(string1, string2) {
     return true;
 }
 
+// const isAnagram = (s1, s2) =>
+//     s1.split('').sort().join('') === s2.split('').sort().join('');
+
 const result = isAnagram('hello', 'lloeh');
 console.log("result", result);
