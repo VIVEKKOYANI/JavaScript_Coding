@@ -5,16 +5,15 @@ class Stack {
 
   push(element) {
     this.items.push(element);
+    return this.items.length; // Return new size
   }
 
   pop() {
-    if (this.isEmpty()) return null;
-    return this.items.pop();
+    return this.items.length === 0 ? undefined : this.items.pop();
   }
 
   peek() {
-    if (this.isEmpty()) return null;
-    return this.items[this.items.length - 1];
+    return this.items.length === 0 ? undefined : this.items[this.items.length - 1];
   }
 
   isEmpty() {
